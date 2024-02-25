@@ -1,0 +1,131 @@
+body{
+    width: 99vw;
+    height: 90vh;
+    margin: 0;
+    user-select: none;
+}
+.container{
+    width: 600px;
+    background-color: rgb(216, 216, 216);
+    border-radius: 20px;
+    margin-left: auto;
+    margin-right: auto;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 50px;
+}
+h1{
+    font-family: "Ubuntu", sans-serif;
+    font-weight: 700;
+    font-style: normal;
+    font-size: 50px;
+}
+#button{
+    font-family: "Ubuntu", sans-serif;
+    font-weight: 500;
+    font-style: normal;
+    font-size: 20px;
+    margin-left: 20px;
+    border: 0;
+    background-color: aquamarine;
+    border-radius: 10px;
+    width: 70px;
+    height: 40px;
+    margin-top: 10px;
+
+    
+}
+#button:hover{
+    cursor: pointer;
+    background-color: rgb(120, 247, 204);
+}
+#button:active{
+    cursor: pointer;
+}
+#input{
+    border: 0;
+    font-family: "Ubuntu", sans-serif;
+    font-weight: 500;
+    font-style: normal;
+    margin-top: 10px;
+    width: 200px;
+    height: 40px;
+    font-size: 20px;
+    border-radius: 10px;
+}
+.buttonAndInput{
+    display: flex;
+}
+ul{
+    font-family: "Ubuntu", sans-serif;
+    font-weight: 500;
+    font-style: normal;
+    font-size: 20px;
+    list-style: none;
+}
+#deleteButton{
+    font-family: "Ubuntu", sans-serif;
+    font-weight: 500;
+    font-style: normal;
+    font-size: 17px;
+    border: 0;
+    background-color: rgba(127, 255, 212, 0);
+    margin-top: 10px;
+    height: 35px;
+    margin-left: 10px;
+}
+#deleteButton:hover{
+    cursor: pointer;
+    background-color: rgba(0, 0, 0, 0.048);
+}
+#deleteButton:active{
+    cursor: pointer;
+}
+#checkbox{
+    margin-right: 10px;
+    margin-bottom: 0;
+    margin-top: 6px;
+    height: 20px;
+    width: 20px;
+    color:aquamarine;
+}
+#upButton{
+    font-family: "Ubuntu", sans-serif;
+    font-weight: 500;
+    font-style: normal;
+    font-size: 17px;
+    border: 0;
+    background-color: rgba(127, 255, 212, 0);
+    margin-top: 10px;
+    height: 35px;
+    width: 35px;
+    margin-left: 10px;
+}
+#upButton:hover{
+    cursor: pointer;
+    background-color: rgba(0, 0, 0, 0.048);
+}
+#upButton:active{
+    cursor: pointer;
+}
+#downButton{
+    font-family: "Ubuntu", sans-serif;
+    font-weight: 500;
+    font-style: normal;
+    font-size: 17px;
+    border: 0;
+    background-color: rgba(127, 255, 212, 0);
+    margin-top: 10px;
+    height: 35px;
+    width: 35px;
+    margin-left: 10px;
+}
+#downButton:hover{
+    cursor: pointer;
+    background-color: rgba(0, 0, 0, 0.048);
+}
+#downButton:active{
+    cursor: pointer;
+}
