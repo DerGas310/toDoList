@@ -61,18 +61,26 @@ function addTask(text) {
         input.value = ''
     
 }
-function save(){
-    let texts = []
-    const listItems = document.querySelectorAll('#list li')
-    texts = listItems.forEach(li => {
-        texts.push(li.textContent)
-    })
-    localStorage.setItem('toDoList', JSON.stringify(texts))
+function save() {
+    const listItems = document.querySelectorAll('#list li');
+    const texts = Array.from(listItems).map(li => {
+        return li.textContent.replace('❌', '').replace('↑', '').replace('↓', '').trim();
+    });
+    localStorage.setItem('toDoList', JSON.stringify(texts));
 }
 function saveLocaly() {
     alert('Список задач сохранен')
     save()
 }
-document.addEventListener('DOMContentLoaded',function (){
-    const texts = JSON.parse(localStorage.getItem('toDoList')) || []
-})
+document.addEventListener('DOMContentLoaded', function() {
+    let texts = JSON.parse(localStorage.getItem('toDoList')) || [];
+
+    if (texts.length > 0) {
+        for (const task of texts) {
+            addTask(task);
+        }
+    } else {
+        // If there are no saved tasks, initialize texts as an empty array
+        texts = [];
+    }
+});
